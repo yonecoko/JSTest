@@ -27,6 +27,5 @@ export const priceCalculator = (price, isTakeOut) => {
   } else {
     tax = 1.1;
   }
-
   return Math.floor(price * tax);
 };
