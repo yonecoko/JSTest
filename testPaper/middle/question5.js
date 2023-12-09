@@ -19,7 +19,7 @@ export const changeElementText = (elementId, text) => {
       const newElement = document.createElement("div");
       newElement.id = elementId;
       newElement.textContent = text;
-      body.appendChild(newElement);
+      document.body.appendChild(newElement);
     } else {
       element.textContent = text;
     }
