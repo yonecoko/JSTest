@@ -14,4 +14,17 @@
  */
 export const sumAndAverage = (array) => {
   //ここに記述
+ let sum = 0;
+ let average = 0;
+ let length = array.length;
+
+ for (let i = 0; i < 5; i++) {
+    sum += array[i];
+ }
+
+ for (let j = 0; j < 5; j++) {
+    average += array[j] / length;
+ }
+
+ return {sum, average};
 };
