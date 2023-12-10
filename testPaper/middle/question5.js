@@ -14,7 +14,7 @@ export const changeElementText = (elementId, text) => {
   //ここに記述
   const element = document.getElementById(elementId);
 
-  const textChange = function() {
+  // const textChange = function() {
     if (element === null) {
       const newElement = document.createElement("div");
       newElement.id = elementId;
@@ -23,7 +23,7 @@ export const changeElementText = (elementId, text) => {
     } else {
       element.textContent = text;
     }
-  }
+  // }
 
-  return textChange();
+  // return textChange();
 };
