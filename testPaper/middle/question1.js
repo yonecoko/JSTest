@@ -24,15 +24,15 @@
 export const createUserActionString = (object) => {
   //ここに記述
 
-  let name = `${object.userName}さんが`;
-  let action = `${object.action}しました`;
-
   if(object.userName === undefined) {
-    name = "名無しさん";
+    object.userName = "名無しさん";
   };
   if(object.action === undefined) {
-    action = "は何もしませんでした";
+    object.action = "は何もしませんでした";
   };
+
+  let name = `${object.userName}さん`;
+  let action = `が${object.action}しました`;
 
   return `${name}${action}`;
 };
