@@ -27,10 +27,10 @@ export const createUserActionString = (object) => {
   let name = `${object.userName}さん`;
   let action = `が${object.action}しました`;
 
-  if (object.userName === "") {
+  if (object.userName == undefined || object.userName === "") {
     name = "名無しさん";
   }
-  if (object.action === "") {
+  if (object.action == undefined || object.action === "") {
     action = "は何もしませんでした";
   }
 
