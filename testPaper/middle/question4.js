@@ -21,9 +21,7 @@ export const toggleArrayElement = (array, ele) => {
   array.map(newArray => {
     if(newArray === ele) {
       newArray.splice(ele, 1);
-    } else {
-      newArray.push(ele);
-    }
+    } 
   });
 
 };
