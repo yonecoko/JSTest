@@ -20,7 +20,7 @@ export const toggleArrayElement = (array, ele) => {
   let array2 = [];
 
   // array.forEach(v => {
-    if(v !== ele) {
+    if(array !== ele) {
       array2 = [...array, ele];
     } else {
       array2 = array.filter(val => val === ele);
