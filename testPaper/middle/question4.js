@@ -20,7 +20,7 @@ export const toggleArrayElement = (array, ele) => {
 
   // arrayの要素がeleと同じか確認するforEachを作って
   // その要素の中でeleと同じ要素があったら、削除→この作業は1回だけにしたい
-  const array2 = [];
+  let array2 = [];
 
   for(let i = 0; i < array.length; i++) {
     
