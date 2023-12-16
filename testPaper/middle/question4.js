@@ -18,10 +18,12 @@
 export const toggleArrayElement = (array, ele) => {
   //ここに記述
 
-  array.map(newArray => {
-    if(newArray === ele) {
-      newArray.splice(ele, 1);
-    } 
+  array.forEach((v,i) => {
+    if (v[i].value === ele) {
+      v.splice(i, 1);
+    } else {
+      v.push(ele);
+    }
   });
 
 };
