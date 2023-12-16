@@ -17,21 +17,19 @@
  */
 export const toggleArrayElement = (array, ele) => {
   //ここに記述
+let v2 = [];
 
   array.forEach((v,i) => {
     if (v === ele) {
-      array.splice(i, 1);
+      v2 = array.splice(i, 1);
     } else {
-      array.push(ele);
+      v2 = array.push(ele);
     }
   });
-
-  return array;
+  return v2;
 
 };
 
-  // string or number の要素を持つ配列　→　array は [1, 2, 3, 4, 5]の配列
-  // この情報は引数としてわたってくるから記述しなくてOK
-  // arrayの中に　指定された要素(ele)　があるかどうか判断　if arrayの中にeleがあったら
-  // arrayの中にeleがあったら、その要素を削除　arrayの中のeleを削除
-  // eleがなかったら　配列の最後尾に追加　arrayの最後尾にeleを追加
+
+
+
