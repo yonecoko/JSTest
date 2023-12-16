@@ -26,10 +26,8 @@ export const toggleArrayElement = (array, ele) => {
     
     if(array[i] === ele) {
       array2 = array.filter(val => val === ele);
-      break;
     } else {
       array2 = [...array, ele];
-      break;
     };
   };
 
