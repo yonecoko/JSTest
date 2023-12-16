@@ -17,15 +17,15 @@
  */
 export const toggleArrayElement = (array, ele) => {
   //ここに記述
-  let array2 = array;
+  let array2 = [];
 
-  array.forEach(v => {
+  // array.forEach(v => {
     if(v !== ele) {
       array2 = [...array, ele];
     } else {
       array2 = array.filter(val => val === ele);
-    }
-  });
+    };
+  // };
 
   return array2;
 };
