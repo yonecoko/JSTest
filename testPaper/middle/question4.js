@@ -17,16 +17,27 @@
  */
 export const toggleArrayElement = (array, ele) => {
   //ここに記述
-const v2 = [];
+  const array2 = [];
 
-  array.forEach((v,i) => {
-    if (v === ele) {
-      v2 = array.splice(i, 1);
+  array.forEach(v => {
+    if(v !== ele) {
+      array2 = [...array, ele];
     } else {
-      v2 = array.push(ele);
+      array2 = array.filter(val => val === ele);
     }
   });
-  return v2;
+
+  return array2;
+// let array2 = [];
+
+//   array.forEach((v,i) => {
+//     if (v === ele) {
+//       array2 = array.splice(i, 1);
+//     } else {
+//       array2 = array.push(ele);
+//     }
+//   });
+//   return array2;
 
 };
 
