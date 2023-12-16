@@ -24,12 +24,10 @@ export const toggleArrayElement = (array, ele) => {
 
   for(let i = 0; i < array.length; i++) {
     
-    if(v === ele) {
+    if(array[i] === ele) {
       array2 = array.filter(val => val === ele);
       break;
-    };
-    
-    if(v !== ele) {
+    } else {
       array2 = [...array, ele];
       break;
     };
