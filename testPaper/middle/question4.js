@@ -26,6 +26,8 @@ export const toggleArrayElement = (array, ele) => {
     }
   });
 
+  return array;
+
 };
 
   // string or number の要素を持つ配列　→　array は [1, 2, 3, 4, 5]の配列
