@@ -12,4 +12,18 @@
 
 export const changeElementText = (elementId, text) => {
   //ここに記述
+  const element = document.getElementById(elementId);
+
+  // const textChange = function() {
+    if (element === null) {
+      const newElement = document.createElement("div");
+      newElement.id = elementId;
+      newElement.textContent = text;
+      document.body.appendChild(newElement);
+    } else {
+      element.textContent = text;
+    }
+  // }
+
+  // return textChange();
 };

@@ -17,4 +17,34 @@
  */
 export const toggleArrayElement = (array, ele) => {
   //ここに記述
+
+  // arrayの要素がeleと同じか確認するforEachを作って
+  // その要素の中でeleと同じ要素があったら、削除→この作業は1回だけにしたい
+  let array2 = [];
+
+  for(let i = 0; i < array.length; i++) {
+    
+    if(array[i] === ele) {
+      array2 = array.filter(val => val === ele);
+      break;
+    } else {
+      array2 = [...array, ele];
+    };
+  };
+
+  return array2;
 };
+
+
+
+
+// let array2 = [];
+
+//   array.forEach((v,i) => {
+//     if (v === ele) {
+//       array2 = array.splice(i, 1);
+//     } else {
+//       array2 = array.push(ele);
+//     }
+//   });
+//   return array2;
