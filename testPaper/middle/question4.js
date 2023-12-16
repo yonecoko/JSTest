@@ -19,7 +19,7 @@ export const toggleArrayElement = (array, ele) => {
   //ここに記述
 
   array.forEach((v,i) => {
-    if (v[i].value === ele) {
+    if (i.value === ele) {
       v.splice(i, 1);
     } else {
       v.push(ele);
