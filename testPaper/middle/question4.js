@@ -17,7 +17,7 @@
  */
 export const toggleArrayElement = (array, ele) => {
   //ここに記述
-  let array2 = [];
+  let array2 = array;
 
   array.forEach(v => {
     if(v !== ele) {
