@@ -22,7 +22,7 @@ export const toggleArrayElement = (array, ele) => {
     if (i.value === ele) {
       v.splice(i, 1);
     } else {
-      v.push(ele.value);
+      v.push(...ele);
     }
   });
 
