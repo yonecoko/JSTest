@@ -17,7 +17,7 @@
  */
 export const toggleArrayElement = (array, ele) => {
   //ここに記述
-  const array2 = [];
+  let array2 = [];
 
   array.forEach(v => {
     if(v !== ele) {
@@ -28,6 +28,11 @@ export const toggleArrayElement = (array, ele) => {
   });
 
   return array2;
+};
+
+
+
+
 // let array2 = [];
 
 //   array.forEach((v,i) => {
@@ -38,9 +43,3 @@ export const toggleArrayElement = (array, ele) => {
 //     }
 //   });
 //   return array2;
-
-};
-
-
-
-
